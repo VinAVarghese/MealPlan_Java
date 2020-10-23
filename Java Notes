@@ -1,0 +1,11 @@
+- "Void" is a reserved function that returns nothing.
+- Class = container for one or more related functions (or methods)
+- "Main" class and method runs whenever a Java program runs
+- Access Modifiers (e.g. "public" and "private") = 
+
+    example: 
+    public class Main {
+        public void main() {
+            
+        }
+    }
