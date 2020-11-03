@@ -9,3 +9,20 @@
             
         }
     }
+
+- Primative Types (bytes used)
+    - byte (1) / short (2) / int (4)
+        - whole numbers > least space to most 
+    - long (8)
+        - largest whole numbers
+        - "L" suffix needs to be added to end of long
+    - float (4) / double (8)
+        - decimal integers > least space to most
+        - "F" suffix needs to be added to end of float
+    - char (2)
+        - single characters
+    - boolean (1)
+        - true/false
+
+- Reference Types
+    - Objects/Classes
