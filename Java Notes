@@ -26,3 +26,38 @@
 
 - Reference Types
     - Objects/Classes
+    - "String" is a auto imported reference type in Java
+        - String message = new String("Hello world")
+        - Can be short handed to...
+            - String message = "Hello world"
+            - Looks like a primative type but it is just a shorthand
+
+    - Arrays
+        - int[] numbers = {2, 3, 5, 1, 4}; // [2,3,5,1,4]
+        - numbers.length // 5
+        * When printing arrays in java, java automatically returns arrays as their positions in memory (mumbojumbo) so use the .toString method to print out the expected format (e.g. [[1,2,3,10], [1,3,5,12]])
+    
+    - Multi-dimensional Array
+        * Use the .deepToString method to print out multi-dimensional arrays in the expected format (e.g. [1,2,3,10])
+        - int[][] numbers = {{2, 3, 5, 1, 4}, { 1, 2, 3, 10}} ; 
+
+    - Constant
+        - using "final" infront of the variable initializer it makes the variable unchangable
+        - example:
+            - final int num = 54;
+            - num = 34; // Won't change the "num" variable
+    
+    - Some Arithmitic 
+        - int result = 10 + 3;
+        - System.out.println(result); // 13
+        - int result = 10 / 3;
+        - System.out.println(result); // 3 (won't give decimals for whole numbers)
+        - double result = (double)10 / (double)3; // This is "explicit casting"
+        - System.out.println(result); // 3.3333333333333335 (once "double" or "float" is used in the expression and the initialization of the variable, the full result will be outputted)
+    
+    - Reading Input
+        - Scanner scanner = new Scanner(System.in);
+        - System.out.print("Age: "); // Adds a label for what input is expected
+        - byte age = scanner.nextByte(); // Waits for an input to be entered
+        - System.out.println("You are " + age); // And then prints your entry
+        
