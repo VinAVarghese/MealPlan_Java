@@ -61,3 +61,8 @@
         - byte age = scanner.nextByte(); // Waits for an input to be entered
         - System.out.println("You are " + age); // And then prints your entry
         
+- Declaring Constant Variables
+    - In JavaScript
+        const monthsInYear = 12;
+    - In Java 
+        final byte monthsInYear = 12;
