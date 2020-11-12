@@ -39,30 +39,89 @@
     
     - Multi-dimensional Array
         * Use the .deepToString method to print out multi-dimensional arrays in the expected format (e.g. [1,2,3,10])
-        - int[][] numbers = {{2, 3, 5, 1, 4}, { 1, 2, 3, 10}} ; 
+        - int[][] numbers = {{2, 3, 5, 1, 4}, { 1, 2, 3, 10}} ;   
 
-    - Constant
-        - using "final" infront of the variable initializer it makes the variable unchangable
-        - example:
-            - final int num = 54;
-            - num = 34; // Won't change the "num" variable
-    
-    - Some Arithmitic 
-        - int result = 10 + 3;
-        - System.out.println(result); // 13
-        - int result = 10 / 3;
-        - System.out.println(result); // 3 (won't give decimals for whole numbers)
-        - double result = (double)10 / (double)3; // This is "explicit casting"
-        - System.out.println(result); // 3.3333333333333335 (once "double" or "float" is used in the expression and the initialization of the variable, the full result will be outputted)
-    
-    - Reading Input
-        - Scanner scanner = new Scanner(System.in);
-        - System.out.print("Age: "); // Adds a label for what input is expected
-        - byte age = scanner.nextByte(); // Waits for an input to be entered
-        - System.out.println("You are " + age); // And then prints your entry
+- Some Arithmitic 
+    - int result = 10 + 3;
+    - System.out.println(result); // 13
+    - int result = 10 / 3;
+    - System.out.println(result); // 3 (won't give decimals for whole numbers)
+    - double result = (double)10 / (double)3; // This is "explicit casting"
+    - System.out.println(result); // 3.3333333333333335 (once "double" or "float" is used in the expression and the initialization of the variable, the full result will be outputted)
+
+- Reading Input
+    - Scanner scanner = new Scanner(System.in);
+    - System.out.print("Age: "); // Adds a label for what input is expected
+    - byte age = scanner.nextByte(); // Waits for an input to be entered
+    - System.out.println("You are " + age); // And then prints your entry
         
 - Declaring Constant Variables
     - In JavaScript
         const monthsInYear = 12;
     - In Java 
         final byte monthsInYear = 12;
+    - Using "final" in front of the variable initializer it makes the variable unchangable
+        - example:
+            - final int num = 54;
+            - num = 34; // Won't change the "num" variable
+
+- Comparative Operators
+    - Compares primitive values
+    - == (equality operator)
+    - != (inequality operator)
+    - <, >, <= or >= (other operators)
+        - ex:
+            - int x = 1;
+            - int y = 1;
+            - x == y // true
+            - x != y // false
+
+- Logical Operators 
+    - && (and operator)
+        - ex:
+            - int temp = 81;
+            - boolean isWarm = temp > 70 && temp < 80
+            - isWarm // false
+    - || (or operator)
+        - ex:
+            - boolean hasHighIncome = true;
+            - boolean hasGoodCredit = false;
+            - boolean isEligible = hasHighIncome || hasGoodCredit
+            - isEligible // true
+    - ! (not operator)
+        - ex of all together:
+            - boolean hasHighIncome = true;
+            - boolean hasGoodCredit = false;
+            - boolean hasCriminalRecord = true;
+            - boolean isEligible = (hasHighIncome || hasGoodCredit) && !hasCriminalRecord;
+            - isEligible // false
+    
+- If Statements && Ternary Operators
+    - Same a JavaScript
+
+- Switch Statements
+    - If statement example:
+    String role = "admin";
+    if (role == "admin")
+        System.out.println("You're an admin")
+    else if (role == "moderator")
+        System.out.println("You're a moderator")
+    else 
+        System.out.println("You're a guest")
+
+    - Switch statement refactor:
+    String role = "admin";
+
+    switch(role){
+        case "admin":
+           System.out.println("You're an admin")
+           break;
+        case "moderator":
+           System.out.println("You're an moderator")
+           break;
+        default:
+           System.out.println("You're an guest")
+    }
+    
+    
+
