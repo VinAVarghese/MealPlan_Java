@@ -123,5 +123,12 @@
            System.out.println("You're an guest")
     }
     
+- For Loops
+    - same as JavaScript but use "int" instead of "var" or "let" when defining 'i'
+    - ex:
+        for(int i = 0; i < 5; i++){
+            // loops code here 5 times
+        }
     
-
+- While Loops
+    - same as JavaScript
